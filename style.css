@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #323238;
+  --bg-card: hsl(240, 9%, 89%);
+  --bg-cardOn: #02799D;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif; 
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19.2rem;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.page1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#timer {
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+
+#timer span {
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+}
+
+#controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.play, .stop, .more, .minus {
+  border: none;
+  background: var(--bg-color);
+  cursor: pointer;
+}
+
+.play svg path,
+.stop svg path,
+.more svg path,
+.minus svg path {
+  fill: var(--text-color);
+}
+
+/* ################################# */
+
+.page2 {
+  display: grid;
+  grid-template-areas: "A B" "C D";
+  gap: 3.2rem;
+}
+
+.cardFirePlace, .cardForest, .cardRain, .cardCoffee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: var(--bg-card);
+  cursor: pointer;
+}
+
+.cardFirePlace svg path,
+.cardRain svg path,
+.cardCoffee svg path,
+.cardForest svg path {
+  fill: var(--text-color);
+}
+
+.cardOn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: var(--bg-cardOn);
+  cursor: pointer;
+}
+
+.cardOn svg path {
+  fill: var(--bg-color);
+}
+
+.cardFirePlace:hover,
+.cardOn:hover,
+.cardRain:hover,
+.cardForest:hover,
+.cardCoffee:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
