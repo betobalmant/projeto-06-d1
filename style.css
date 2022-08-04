@@ -90,15 +90,9 @@ main {
 }
 
 .cardOn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2.4rem;
-  width: 13.8rem;
-  height: 15.2rem;
   background-color: var(--bg-cardOn);
-  cursor: pointer;
 }
+
 
 .cardOn svg path {
   fill: var(--bg-color);

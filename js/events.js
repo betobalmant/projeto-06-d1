@@ -45,11 +45,9 @@ export default function ({ timer }) {
   cardForest.addEventListener('click', function () {
     if (cardForest.className == 'cardForest') {
       cardForest.classList.add('cardOn')
-      cardForest.classList.remove('cardForest')
       soundForest.play()
     } else {
       cardForest.classList.remove('cardOn')
-      cardForest.classList.add('cardForest')
       soundForest.pause()
     }
   })
@@ -57,11 +55,9 @@ export default function ({ timer }) {
   cardRain.addEventListener('click', function () {
     if (cardRain.className == 'cardRain') {
       cardRain.classList.add('cardOn')
-      cardRain.classList.remove('cardRain')
       soundRain.play()
     } else {
       cardRain.classList.remove('cardOn')
-      cardRain.classList.add('cardRain')
       soundRain.pause()
     }
   })
@@ -69,11 +65,9 @@ export default function ({ timer }) {
   cardCoffee.addEventListener('click', function () {
     if (cardCoffee.className == 'cardCoffee') {
       cardCoffee.classList.add('cardOn')
-      cardCoffee.classList.remove('cardCoffee')
       soundCoffee.play()
     } else {
       cardCoffee.classList.remove('cardOn')
-      cardCoffee.classList.add('cardCoffee')
       soundCoffee.pause()
     }
   })
@@ -81,11 +75,9 @@ export default function ({ timer }) {
   cardFirePlace.addEventListener('click', function () {
     if (cardFirePlace.className == 'cardFirePlace') {
       cardFirePlace.classList.add('cardOn')
-      cardFirePlace.classList.remove('cardFirePlace')
       soundFirePlace.play()
     } else {
       cardFirePlace.classList.remove('cardOn')
-      cardFirePlace.classList.add('cardFirePlace')
       soundFirePlace.pause()
     }
   })
